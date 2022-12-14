@@ -97,4 +97,4 @@ class StatusIcon extends HTMLElement
       @name.innerHTML = name
       @terminalView.emit 'did-change-title'
 
-module.exports = document.registerElement('pio-terminal-status-icon', prototype: StatusIcon.prototype, extends: 'li')
+module.exports = customElements.define('pio-terminal-status-icon', prototype: StatusIcon.prototype, extends: 'li')
